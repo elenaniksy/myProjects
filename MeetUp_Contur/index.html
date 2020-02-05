@@ -9,7 +9,7 @@
     <link href="https://kit.fontawesome.com/b99b96fe7e/css/brands.css" rel="stylesheet">
     <link href="https://kit.fontawesome.com/b99b96fe7e/solid.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b99b96fe7e.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+
 
 </head>
 <body>
@@ -52,7 +52,7 @@
     <section class="main-screen">
         <div class="sectionBackground">
             <div class="main-image">
-                <img src="IMG/buildings.png" id="mainImg">
+                <img src="IMG/buildings.png" id="mainImg" alt="">
             </div>
 
 
@@ -82,18 +82,18 @@
         <div class="aboutUs_text">
             <h2 class="aboutUs_title">1. O нас</h2>
             <h3 class="subtitle">Полный спектр услуг - от дизайна до печати</h3>
-            <p class="aboutUs_paragraph">Задача организации, в особенности же постоянное информационно-пропагандистское
+            <p class="paragraph">Задача организации, в особенности же постоянное информационно-пропагандистское
                 обеспечение нашей деятельности способствует подготовки и реализации модели развития. Разнообразный и
                 богатый опыт новая модель организационной деятельности позволяет оценить значение форм развития. </p>
 
-            <p class="aboutUs_paragraph">Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское
+            <p class="paragraph">Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское
                 обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и
                 административных условий. С другой стороны постоянное информационно-пропагандистское обеспечение
                 нашей деятельности представляет собой интересный эксперимент проверки соответствующий условий
                 активизации. С другой стороны консультация с широким активом влечет за собой процесс внедрения и
                 модернизации новых предложений. </p>
 
-             <p class="aboutUs_paragraph">  Идейные соображения высшего порядка, а также постоянный количественный рост и
+             <p class="paragraph">  Идейные соображения высшего порядка, а также постоянный количественный рост и
                  сфера нашей
                  активности
                 в значительной степени обуславливает создание модели развития. Товарищи! рамки и место обучения кадров способствует подготовки и реализации систем массового участия.
@@ -102,7 +102,7 @@
         </div>
     </section>
 
-    <section id="services">
+    <section class="greyContainer" id="services">
         <div  class="content-blocks" id="printings_advertising">
             <div id="advertising_text">
                 <h2>2. Услуги</h2>
@@ -153,17 +153,103 @@
                     <span class="dot" onclick="currentSlides(2)"></span>
                     <span class="dot" onclick="currentSlides(3)"></span>
                 </div>
-
-
             </div>
         </div>
-        <div id="printings_interior"></div>
-        <div id="printings_polygraphy"></div>
+
     </section>
 
+    <section id="printings_interior">
+        <div class="content-blocks" >
+            <div id="interiorBackground">
+                <img src="IMG/sofa.png" id="interiorImg"
+                     alt="Фотообои с изображением желтых тюльпанов на фоне жёлтого дивана">
+            </div>
+
+            <div class="interiorText">
+                <h3 class="subtitle">Широкоформатная печать для вашего интерьера</h3>
+                <p class="paragraph">
+                    Печатаем широкоформатные фотографии на глянцевой и матовой фотобумаге разной плотности, на
+                    глянцевом и матовом холсте или на самоклеющейся пленке. также можем предложить обработку и редактирование ваших фотографий силами наших дизайнеров: композиции, фотоколлаж, ретушь, различные эффекты.
+                </p>
+                <button type="button" id="interior_button">Оставить заявку</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="greyContainer" id="polygraphy">
+        <div class="content-blocks">
+            <div class="polygraphy_RightBlock">
+                <h3 class="subtitle">Оперативная полиграфия — от визитки до баннера</h3>
+                <p class="paragraph"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                    enim. Donec pede justo, fringilla vel, aliquet nec, vulputate. </p>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                </p>
+
+                <p style="margin-top: 6rem;"><i>Есть вопросы?</i>
+                    <br> <span style="font-size: 1.1rem;"> <b>Оставьте заявку на консультацию</b></span> </p>
+          </div>
+
+            <div class="polygraphy_leftBlock">
+                <div class="polygraphy_imgBlock">
+                    <img src="IMG/brandStyle.png" id="polygraphy_img" alt="Пример полного фирменного стиля">
+                </div>
+            </div>
+        </div>
+        <div id="polygraphy_form">
+            <form id="form" action="#" name="landing_request">
+                        <span>
+                            <input id="name" type="text" name="name" placeholder="Имя" required>
+                            <input id="telephone" type="tel" name="telephone" placeholder="Телефон" required>
+                            <button type="submit" id="submit">Отправить</button>
+                        </span>
+            </form >
+            <div class="array">
+                <img src="IMG/paper-plane.png" alt="" id="paper-plane">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>3. Отзывы </h2>
+        <div class="reviews_carousel">
+            <ul class="reviews_carousel_list">
+                <li class="reviews_carousel_item">
+                    <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
+                    <div class="item_text">
+                        <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
+                        <h4>Александров Максим, 24 года</h4>
+                        <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
+                    </div>
+
+                </li>
+                <li class="reviews_carousel_item">
+                    <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
+                    <div class="item_text">
+                        <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
+                        <h4>Александров Максим, 24 года</h4>
+                        <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
+                    </div>
+                </li>
+                <li class="reviews_carousel_item">
+                    <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
+                    <div class="item_text">
+                        <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
+                        <h4>Александров Максим, 24 года</h4>
+                        <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </section>
 
 </main>
 
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
 let slideIndex = 1;
+/*let prevBtn = document.getElementsByClassName("prev");
+let nextBtn = document.getElementsByClassName("prev");*/
 showSlides(slideIndex);
 
 function showSlides(n) {
