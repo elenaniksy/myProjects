@@ -215,40 +215,112 @@
     <section id="reviews">
         <h2>3. Отзывы </h2>
         <div class="reviews_carousel">
-            <ul class="reviews_carousel_list">
-                <li class="reviews_carousel_item">
-                    <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
+            <div class="reviews_carousel_item fade">
+                    <img src="IMG/image_review.png"  alt="Фотография Александрова Максима">
                     <div class="item_text">
                         <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
                         <h4>Александров Максим, 24 года</h4>
                         <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
                     </div>
 
-                </li>
-                <li class="reviews_carousel_item">
+                </div>
+            <div class="reviews_carousel_item fade">
                     <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
                     <div class="item_text">
                         <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
                         <h4>Александров Максим, 24 года</h4>
                         <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
                     </div>
-                </li>
-                <li class="reviews_carousel_item">
-                    <img src="IMG/image_review.png" alt="Фотография Александрова Максима">
+                </div>
+            <div class="reviews_carousel_item fade">
+                    <img src="IMG/image_review.png"  alt="Фотография Александрова Максима">
                     <div class="item_text">
                         <p>Обратился в компанию АртАктив за визитками. Это мой первый опыт, поэтому немного нервничал, не знал, с чего начать. Остался доволен, потому что мне всё объяснили, показали и сделали по высшему разряду. Советую!</p>
                         <h4>Александров Максим, 24 года</h4>
                         <a href="vk.com/mr.sharp" id="link_item">vk.com/mr.sharp</a>
                     </div>
-                </li>
-            </ul>
-
-
+                </div>
+            <a class="prev_review" onclick="plusReview(-1)">&#8592</a>
+            <a class="next_review" onclick="plusReview(1)">&#8594</a>
         </div>
 
     </section>
 
+    <section id="FAQ">
+        <h2 id="FAQ_header">4. Частые вопросы (FAQ)</h2>
+        <div class="content-blocks">
+            <div class="FAQ_question">
+                <h3><b>Что такое макет?</b></h3>
+                <p>Макет —  это будущее печатное изделие в электронном формате. Верстают (собирают) макет в специализированном программном обеспечении. </p>
+            </div>
+            <div class="FAQ_question">
+                <h3><b>У меня есть готовый макет</b></h3>
+                <p>Вы можете привезти его к нам в офис на любом удобном для вас носителе (диск, флешка). В присутствии вас мы обработаем ваш макет и отправим его в производство.</p>
+            </div>
+            <div class="FAQ_question">
+                <h3><b>У меня нет макета</b></h3>
+                <p>В нашем штате работают професиональные дизайнеры, которые с ваших слов или в вашем присутствии сверстают макет, который после утверждения также будет отправлен в печать.</p>
+            </div>
+            <div class="FAQ_question">
+                <h3><b>Сколько времени занимает печать?</b></h3>
+                <p>В том случае если изображение готово к печати, изготовление занимает около 3 часов. Также время изготовления зависит от нашей загруженности.</p>
+            </div>
+            <div class="FAQ_question">
+                <h3><b>Я не могу приехать к вам в офис</b></h3>
+                <p>Отправьте нам изображение по электронной почте, укажите свой телефон. Мы свяжемся с вами для уточнения деталей. Готовое изделие мы доставим вам курьером.</p>
+            </div>
+            <div class="FAQ_question">
+                <h3><b>Вызов курьера бесплатный?</b></h3>
+                <p>В зависимости от соимости заказа, курьер может доставить вам продукцию бесплатно (при соимости от 600 руб.) или от 150 руб. в пределах Ярославля и до 500 руб. в пределах Ярославской области.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-form">
+        <div class="form_wrapper">
+            <div class="form_graphic_question">
+                <object id="graphic_gircle" type="image/svg+xml"
+                        data="IMG/form_circles-01.svg"><img src="IMG/form_circles-01.png"></object>
+            </div>
+            <div class="form_text">
+                <p id="form_question">Остались вопросы?</p>
+                <p id="form_calltoacrion">Оставьте заявку на консультацию</p>
+                <div class="form_structure">
+                    <form>
+            <span>
+                <input class="input_main_form" id="name" type="text" name="name" placeholder="Имя" required>
+                            <input class="input_main_form" id="telephone" type="tel" name="telephone"
+                                   placeholder="Телефон" required>
+                            <button class="form_button" type="submit" id="submit">Отправить</button>
+            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="contacts_wrapper">
+            <h2>5. Контакты</h2>
+            <p class="contacts_text"> <i class="fas fa-map-marker-alt"></i> г. Ярославль, проспект Октября, 88</p>
+
+            <p class="contacts_text">
+                <i class="fas fa-envelope"></i>
+                <a id="contacts_mail" type="mail" href="mailto: art-aktiv.76@mail.ru">art-aktiv.76@mail.ru</a>
+            </p>
+
+            <p class="contacts_text">
+                <i class="fas fa-phone-alt"></i>
+                <a id="contacts_telephone" type="tel" href="tel: +7 (920) 148-81-31">+7 (920) 148-81-31</a>
+            </p>
+        </div>
+    </section>
 </main>
+<footer>
+    <p>ООО «АртАктив», 2017 ©</p>
+    <a id="footer_link" href="#" title="Политика конфиденциальности">Политика конфиденциальности</a>
+    <p>Designed by Sergey Strogiy</p>
+</footer>
 
 <script src="script.js"></script>
 </body>

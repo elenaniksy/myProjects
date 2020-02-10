@@ -31,3 +31,27 @@ function currentSlides(n) {
     showSlides(slideIndex = n);
 }
 
+let reviewIndex = 1;
+showReviews(reviewIndex);
+
+function showReviews(k) {
+    var k;
+    let reviews = document.getElementsByClassName("reviews_carousel_item");
+
+    if(k < 1) {
+        reviewIndex = reviews.length;
+    } else if (k > reviews.length) {
+        reviewIndex = 1;
+    }
+    for(k = 0; k < reviews.length; k++) {
+        reviews[k].style.display = "none";
+    }
+    reviews[reviewIndex - 1].style.display = "block";
+}
+
+function plusReview(k) {
+    showReviews(reviewIndex += k);
+}
+
+
+
