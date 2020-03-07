@@ -1,0 +1,71 @@
+/*----------------------- CSS Description---------------------------
+    Info: 1rem === 12px, 1.5rem === 18px, 2rem === 24px and so forth
+*/
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    background-color: var(--light-grey);
+    max-width: 1110px;
+}
+
+:root {
+    --main-background-color: #E5E5E5;
+    --main-font-color: #222222;
+    --footer-color: #515151;
+    --blue: #4737FF;
+    --light-brown: #C6B393;
+    --light-grey: #F4F4F4;
+    --pink: #F21595;
+
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: baseline;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.nav-logo {
+    font-size: 1.1rem;
+}
+
+.nav-input {
+    opacity: 0;
+    border-radius: 1rem;
+    border-style: 1px solid var(--footer-color);
+}
+
+.nav-input:focus {
+    opacity: 1;
+    transition: 0.5s ease;
+    font-size: 1.2rem;
+}
+
+.nav-label:focus {
+    opacity: 0;
+}
+
+.nav-label:hover {
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.nav-bar {
+    cursor: pointer;
+}
+
+.nav-bar:hover {
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.main-screen-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "cnt cnt cnt img img img";
+}
